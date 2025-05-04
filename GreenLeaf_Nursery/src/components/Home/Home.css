@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  background-color: #e0f7e9;
+  padding: 40px;
+  border-radius: 12px;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: url(https://png.pngtree.com/background/20230402/original/pngtree-hands-of-female-botanist-holding-seedling-in-plant-nursery-vector-picture-image_2264103.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-image: fill 1 linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+.left-section {
+  flex: 1;
+  text-align: center;
+  padding-right: 20px;
+  border-right: 2px solid #cceccc;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.company-name {
+  margin: 10px 0;
+  color: #2e7d32;
+  margin-bottom: 30px;
+}
+
+.explore-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.right-section {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.description {
+  font-size: 16px;
+  color: white;
+}

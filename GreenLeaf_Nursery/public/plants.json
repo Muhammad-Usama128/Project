@@ -1,0 +1,86 @@
+[
+  {
+    "plantName": "Snake Plant",
+    "type": "Air Purifying",
+    "image": "https://images.squarespace-cdn.com/content/v1/54fbb611e4b0d7c1e151d22a/1610074066643-OP8HDJUWUH8T5MHN879K/Snake+Plant.jpg?format=1000w",
+    "description": "A hardy plant known for removing toxins and improving air quality.",
+    "price": 14.99
+  },
+  {
+    "plantName": "Peace Lily",
+    "type": "Air Purifying",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM-__Hq3Kan_XSVA0JPTrreUtqCKDTuHl3rw&s",
+    "description": "An elegant plant that purifies air and thrives in low light.",
+    "price": 12.49
+  },
+  {
+    "plantName": "Aloe Vera",
+    "type": "Air Purifying",
+    "image": "https://kendallsflorist.co.uk/wp-content/uploads/2016/01/Aloe-Vera-Plant-2.jpg",
+    "description": "Known for its healing gel and ability to clean indoor air.",
+    "price": 9.99
+  },
+  {
+    "plantName": "Spider Plant",
+    "type": "Air Purifying",
+    "image": "https://www.bhg.com/thmb/oDnjlrHprd67aYvinrMfQgVUPtQ=/5332x0/filters:no_upscale():strip_icc()/BHG-spider-plant-c0e0fdd5ec6e4c1588998ce3167f6579.jpg",
+    "description": "Easy to grow and helps remove carbon monoxide and pollutants.",
+    "price": 11.0
+  },
+  {
+    "plantName": "Areca Palm",
+    "type": "Air Purifying",
+    "image": "https://cdn-bkjpo.nitrocdn.com/FIRiXZYTjwNkQkpWjWZcWBehGaEanfsH/assets/images/optimized/rev-7ef65f1/etree.pk/wp-content/uploads/2018/03/Areca-Palm-Tree.jpg",
+    "description": "A beautiful indoor palm that adds humidity and filters air.",
+    "price": 17.25
+  },
+  {
+    "plantName": "Rubber Plant",
+    "type": "Air Purifying",
+    "image": "https://budsnblush.com/cdn/shop/products/Rubberplantvariegated.jpg?v=1678429801",
+    "description": "Large-leafed plant known for removing indoor pollutants.",
+    "price": 13.75
+  },
+  {
+    "plantName": "Lavender",
+    "type": "Aromatic",
+    "image": "https://cdn.mos.cms.futurecdn.net/vMVNCBkEjtnZE8efv7foyX.jpg",
+    "description": "Famous for its calming fragrance and beautiful purple flowers.",
+    "price": 8.5
+  },
+  {
+    "plantName": "Jasmine",
+    "type": "Aromatic",
+    "image": "https://media.greg.app/cGxhbnQtZGItcGhvdG9zL2FyYWJpYW5famFzbWluZS5qcGc=?format=pjpeg&optimize=high&auto=webp&precrop=1000:1000,smart&fit=crop&width=1000&height=1000",
+    "description": "Sweet-smelling plant often used in perfumes and teas.",
+    "price": 10.25
+  },
+  {
+    "plantName": "Rosemary",
+    "type": "Aromatic",
+    "image": "https://kyari.co/cdn/shop/articles/4.jpg?v=1722840710",
+    "description": "A fragrant herb used in cooking with a fresh, woody scent.",
+    "price": 7.99
+  },
+  {
+    "plantName": "Mint",
+    "type": "Aromatic",
+    "image": "https://www.tasteofhome.com/wp-content/uploads/2023/08/GettyImages-1465218538.jpg",
+    "description": "Cooling and aromatic herb with a strong scent and many uses.",
+    "price": 6.49
+  },
+  {
+    "plantName": "Lemon Balm",
+    "type": "Aromatic",
+    "image": "https://greengardens.pk/wp-content/uploads/2023/09/1000038051.jpg",
+    "description": "Fresh citrus-scented plant with calming properties.",
+    "price": 9.15
+  },
+  {
+    "plantName": "Gardenia",
+    "type": "Aromatic",
+    "image": "https://i.pinimg.com/736x/43/63/17/4363171a18197b086ccdf3a332608edf.jpg",
+    "description": "Highly fragrant white flowers loved for their perfume-like scent.",
+    "price": 11.99
+  }
+]
