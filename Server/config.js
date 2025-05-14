@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const connect = mongoose.connect(
   "mongodb+srv://usama-123:usama123@restaurent.d5u0foe.mongodb.net/social_media?retryWrites=true&w=majority");
-
+async function mongoconnect(){
 connect
   .then(() => {
     console.log("Connected to Social Media successful");
@@ -17,5 +17,6 @@ const accountschema = new mongoose.Schema({
   posts: Array,
 });
 
-const accounts = new mongoose.model("accounts", accountschema);
-module.exports = accounts;
+return accounts = new mongoose.model("accounts", accountschema);
+}
+module.exports = mongoconnect();
