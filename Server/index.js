@@ -1,10 +1,8 @@
 const express = require("express");
-const cors = require("cors");
 const serverless = require("serverless-http");
 const connection = require("./config");
 const app = express();
 
-app.use(cors()); // allow cross-origin if needed
 app.use(express.json());
 
 app.get('/', (req, res) => {
