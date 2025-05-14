@@ -7,6 +7,10 @@ const app = express();
 app.use(cors()); // allow cross-origin if needed
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.send('Hello, this is your message!');
+});
+
 app.post("/register", async (req, res) => {
   const name = req.body.namedata;
   const email = req.body.emaildata;
