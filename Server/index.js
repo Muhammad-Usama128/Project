@@ -1,5 +1,5 @@
 const express = require("express");
-// const connection = require("./config");
+const connection = require("./config");
 const serverless = require("serverless-http");
 const cors = require("cors");
 const app = express();
