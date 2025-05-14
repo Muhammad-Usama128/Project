@@ -2,13 +2,12 @@ const express = require("express");
 const connection = require("./config");
 const app = express();
 const port = 3000;
-app.use(
-  cors({
-    origin: "http://localhost:5173",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
-  })
-);
+app.use(cors({
+  origin: '//', // or use '*' to allow all (for testing)
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type'],
+  credentials: true
+}));
 app.use(express.json());
 
 app.post("/register", async (req, res) => {
@@ -174,7 +173,7 @@ app.post("/posting", async (req, res) => {
     res.status(500).json({ message: "Server error", error });
   }
 });
-
+app.options('*', cors());
 app.listen(port, () => {
   console.log(`Server is listening at http://localhost:${port}`);
 });
