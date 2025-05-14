@@ -2,9 +2,11 @@ const express = require("express");
 const connection = require("./config");
 const app = express();
 const port = 3000;
-
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.send('Hello, Express!');
+});
 app.post("/register", async (req, res) => {
   const name = req.body.namedata;
   const email = req.body.emaildata;
