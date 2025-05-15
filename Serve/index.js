@@ -7,4 +7,4 @@ app.get("/", (req, res) => {
   res.json({ message: "Hello from Serverless Express!" });
 });
 
-module.exports = app;
+module.exports.handler = app;
