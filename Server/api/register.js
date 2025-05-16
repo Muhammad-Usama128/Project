@@ -29,20 +29,10 @@
 //     res.status(500).json({ message: "Server error", error: err });
 //   }
 // }
-
 import dbConnect from "../lib/mongodb";
+import allowCors from "../lib/cors"; // Import CORS wrapper
 
-export default async function handler(req, res) {
-  // Set CORS headers for all requests
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:5173");
-  res.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-
-  // Handle preflight (OPTIONS) request
-  if (req.method === "OPTIONS") {
-    return res.status(200).end();
-  }
-
+async function handler(req, res) {
   await dbConnect();
 
   const { namedata, emaildata, passworddata } = req.body;
@@ -66,3 +56,5 @@ export default async function handler(req, res) {
     return res.status(500).json({ message: "Server error", error });
   }
 }
+
+export default allowCors(handler); // Wrap the handler with CORS
