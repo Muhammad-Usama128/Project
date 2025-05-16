@@ -1,11 +1,8 @@
-// api/login.js
-import { dbConnect, User } from "../../lib/mongodb";
-import allowCors from "../../lib/cors";
+import { dbConnect, User } from "../lib/mongodb";
+import allowCors from "../lib/cors";
 
 async function handler(req, res) {
-  if (req.method !== "POST") return res.status(405).end();
-
-  await dbConnect();
+   await dbConnect();
   const { emaildata, passworddata } = req.body;
 
   try {
@@ -26,3 +23,4 @@ async function handler(req, res) {
 }
 
 export default allowCors(handler);
+
