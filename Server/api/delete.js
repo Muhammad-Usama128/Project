@@ -1,10 +1,7 @@
-// api/delete.js
-import { dbConnect, User } from "../../lib/mongodb";
-import allowCors from "../../lib/cors";
+import { dbConnect, User } from "../lib/mongodb";
+import allowCors from "../lib/cors";
 
 async function handler(req, res) {
-  if (req.method !== "POST") return res.status(405).end();
-
   await dbConnect();
   const { id, email } = req.body;
 
