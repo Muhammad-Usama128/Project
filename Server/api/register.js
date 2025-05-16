@@ -1,5 +1,5 @@
 import dbConnect from "../lib/mongodb";
-import allowCors from "../lib/cors"; // Import CORS wrapper
+import allowCors from "../lib/cors";
 
 async function handler(req, res) {
   await dbConnect();
