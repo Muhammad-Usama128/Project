@@ -1,12 +1,8 @@
-// api/update.js
-import dbConnect from "../../lib/mongodb";
-import mongoose from "mongoose";
+import { dbConnect, User } from "../lib/mongodb";
+import allowCors from "../lib/cors";
 
-export default async function handler(req, res) {
-  if (req.method !== "POST") return res.status(405).end();
-
+async function handler(req, res) {
   await dbConnect();
-  const connection = mongoose.connection.collection("accounts");
 
   const { title, description, image, email, id } = req.body;
 
@@ -27,3 +23,5 @@ export default async function handler(req, res) {
     res.status(500).json({ message: "Server error", error });
   }
 }
+
+export default allowCors(handler);
