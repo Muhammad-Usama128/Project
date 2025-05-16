@@ -1,34 +1,3 @@
-// import dbConnect from "../../lib/mongodb";
-// import mongoose from "mongoose";
-
-// export default async function handler(req, res) {
-//   if (req.method !== "POST") return res.status(405).end();
-//   if (req.method === "OPTIONS") {
-//   res.setHeader("Access-Control-Allow-Origin", "*");
-//   res.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS");
-//   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-//   return res.status(200).end();
-// }
-
-// res.setHeader("Access-Control-Allow-Origin", "*");
-
-
-//   await dbConnect();
-//   const connection = mongoose.connection.collection("accounts");
-
-//   const { namedata: name, emaildata: email, passworddata: password } = req.body;
-
-//   try {
-//     const user = await connection.findOne({ email });
-
-//     if (user) return res.status(200).json({ message: "Email already exists" });
-
-//     await connection.insertOne({ name, email, password, posts: [] });
-//     res.status(200).json({ message: "Email is available" });
-//   } catch (err) {
-//     res.status(500).json({ message: "Server error", error: err });
-//   }
-// }
 import dbConnect from "../lib/mongodb";
 import allowCors from "../lib/cors"; // Import CORS wrapper
 
@@ -54,7 +23,8 @@ async function handler(req, res) {
     }
   } catch (error) {
     return res.status(500).json({ message: "Server error", error });
+    console.log(error)
   }
 }
 
-export default allowCors(handler); // Wrap the handler with CORS
+export default allowCors(handler);
