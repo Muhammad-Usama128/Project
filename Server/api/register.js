@@ -21,6 +21,7 @@ async function handler(req, res) {
       return res.status(200).json({ message: "Email is available" });
     }
   } catch (error) {
+    console.error("API /register error:", error); 
     return res.status(500).json({ message: "Server error", error });
     console.log(error)
   }
