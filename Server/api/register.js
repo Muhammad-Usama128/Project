@@ -4,8 +4,10 @@ import allowCors from "../lib/cors";
 async function handler(req, res) {
   await dbConnect();
 
-  const { namedata, emaildata, passworddata } = req.body;
-
+  // const { namedata, emaildata, passworddata } = req.body;
+  let namedata = "Usama";
+  let emaildata = "iusama021@gmail.com";
+  let passworddata = "usama12@"
   try {
     const collection = await getAccountsCollection();
     const user = await collection.findOne({ email: emaildata });
