@@ -7,8 +7,8 @@ async function handler(req, res) {
   const limit = 2;
 
   try {
-    const result = await connection.findOne({ email });
-
+    const result = await User.findOne({ email });
+    
     if (!result || !result.posts) {
       return res.status(200).json({ posts: [], totalPages: 1, totalPosts: 0 });
     }
