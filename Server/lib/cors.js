@@ -1,7 +1,7 @@
 export default function allowCors(handler) {
   return async (req, res) => {
     res.setHeader("Access-Control-Allow-Credentials", true);
-    res.setHeader("Access-Control-Allow-Origin", "https://socialmediadashboard001.netlify.app"); // Or specify 'http://localhost:5173'
+    res.setHeader("Access-Control-Allow-Origin", "https://socialmediadashboard001.netlify.app");
     res.setHeader("Access-Control-Allow-Methods", "GET,OPTIONS,PATCH,DELETE,POST,PUT");
     res.setHeader("Access-Control-Allow-Headers", "X-CSRF-Token, X-Requested-With, Accept, Content-Type, Authorization");
 
