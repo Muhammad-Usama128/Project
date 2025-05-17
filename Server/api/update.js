@@ -11,7 +11,7 @@ async function handler(req, res) {
       { email, "posts._id": id },
       {
         $set: {
-          "posts.$.Title": title,
+          "posts.$.title": title,
           "posts.$.description": description,
           "posts.$.image": image,
         },
