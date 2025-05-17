@@ -14,7 +14,7 @@ async function handler(req, res) {
   };
 
   try {
-    await connection.updateOne(
+    const user = await User.updateOne(
       { email },
       { $push: { posts: { $each: [post], $position: 0 } } }
     );
