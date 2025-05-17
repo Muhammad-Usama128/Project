@@ -1,0 +1,32 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #a7a7a7;
+  & .nav-left {
+    & img {
+      width: 160px;
+    }
+  }
+  & .nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    & .link {
+      color: white;
+      text-decoration: none;
+      background-color: #ffb208;
+      padding: 10px 22px;
+      border: 2px solid black;
+      border-radius: 10px;
+      font-weight: 700;
+      display: inline-block;
+      cursor: pointer;
+      &:hover {
+        background-color: #e79e00;
+      }
+    }
+  }
+}

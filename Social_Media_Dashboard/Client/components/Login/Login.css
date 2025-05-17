@@ -1,0 +1,66 @@
+.login-page {
+  background-image: url("https://wallpapers.com/images/hd/4k-social-background-3840-x-2160-acugei4fm5p7r7by.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 73px);
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 430px;
+}
+.form-container .account-reg {
+  text-align: center;
+  margin-top: 15px;
+}
+.form-container .account-reg a {
+  color: #e79e00;
+  text-decoration: none;
+}
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.form-group p.error {
+  color: red;
+  font-size: 12px;
+  margin: 5px 0 0;
+  visibility: hidden;
+}
+
+.submitbtn {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffb208;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submitbtn:hover {
+  background-color: #e79e00;
+}

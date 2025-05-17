@@ -1,0 +1,102 @@
+.register-page {
+  background-image: url("https://wallpapers.com/images/hd/4k-social-background-3840-x-2160-acugei4fm5p7r7by.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 430px;
+  margin: 0 auto;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.form-group p.error {
+  color: red;
+  font-size: 12px;
+  margin: 5px 0 0;
+  visibility: hidden;
+}
+.Error p.error {
+  visibility: visible !important;
+}
+.submitbtn {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffb208;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submitbtn:hover {
+  background-color: #e79e00;
+}
+.submitbtn:disabled {
+  background-color: #fed98a;
+  cursor: not-allowed;
+  &:hover {
+    background-color: #fed98a;
+  }
+}
+
+.instruction {
+  width: 50vw;
+  margin: 100px auto;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  & h1 {
+    text-align: center;
+    color: #e79e00;
+  }
+}
+.result-msg {
+  z-index: 4;
+  position: absolute;
+}
+.message {
+  position: fixed;
+  padding: 10px 20px;
+  text-align: justify;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  top: 15px;
+  right: -100%;
+  width: 250px;
+  transition: right 0.4s ease;
+}
+.success {
+  background: #32cd32;
+  right: 10px;
+}
+.error1 {
+  background-color: #d93025;
+  right: 10px;
+}
