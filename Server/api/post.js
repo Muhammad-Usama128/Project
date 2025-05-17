@@ -4,7 +4,7 @@ import allowCors from "../lib/cors";
 async function handler(req, res) {
   await dbConnect();
 
-  // const { title, description, image, email, category } = req.body;
+  const { title, description, image, email, category } = req.body;
   let title = "Posting";
   let description = "This is post";
   image = "";
