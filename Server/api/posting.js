@@ -4,7 +4,7 @@ import allowCors from "../lib/cors";
 async function handler(req, res) {
   await dbConnect();
   const { currentPage, email, category } = req.body;
-  const limit = 2;
+  const limit = 3;
 
   try {
     const result = await User.findOne({ email });
