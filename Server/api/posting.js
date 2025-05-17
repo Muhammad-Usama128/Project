@@ -18,7 +18,7 @@ async function handler(req, res) {
     );
 
     const totalPosts = filteredPosts.length;
-    const totalPages = (Math.ceil(totalPosts / limit) >== 1) ? Math.ceil(totalPosts / limit) >== 1 : 1;
+    const totalPages = Math.ceil(totalPosts / limit);
     
     const startIndex = (currentPage - 1) * limit;
     const paginatedPosts = filteredPosts.slice(startIndex, startIndex + limit);
