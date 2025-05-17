@@ -7,7 +7,7 @@ async function handler(req, res) {
   const { title, description, image, email, id } = req.body;
 
   try {
-    await connection.updateOne(
+    await User.updateOne(
       { email, "posts._id": id },
       {
         $set: {
