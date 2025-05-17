@@ -3,8 +3,8 @@ import allowCors from "../lib/cors";
 
 async function handler(req, res) {
   await dbConnect();
-
   const { title, description, image, email, category } = req.body;
+  
   const post = {
     _id: Math.random().toString(36).substring(2, 10),
     category,
