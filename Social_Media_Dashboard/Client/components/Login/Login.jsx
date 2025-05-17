@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
-import "./login.css";
+import "./Login.css";
 
 const Login = () => {
   document.title = "Login - Social Media Dashboard";
